@@ -13,14 +13,14 @@ load_dotenv()
 reddit = praw.Reddit(
     client_id=os.getenv("REDDIT_CLIENT_ID"),
     client_secret=os.getenv("REDDIT_CLIENT_SECRET"),
-    user_agent="script by @yourusername"
+    user_agent="script by @tylergibbs"
 )
 
 # OpenAI API setup
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Function to fetch posts from a subreddit
-def fetch_posts(subreddit_name, post_type="hot", limit=10):
+def fetch_posts(subreddit_name, post_type="hot", limit=15):
     subreddit = reddit.subreddit(subreddit_name)
     if post_type == "hot":
         return subreddit.hot(limit=limit)
