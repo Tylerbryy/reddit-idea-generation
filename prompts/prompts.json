@@ -1,0 +1,4 @@
+{
+    "generate_startup_idea": "Here is a Reddit post titled '{post_title}' with the content: '{post_content}'. Can you suggest a python project based on this post?",
+    "generate_youtube_video_idea": "Here is a Reddit post titled '{post_title}' with the content: '{post_content}'. Brainstorm some video ideas of what would be a thought-provoking video title and outline for my YouTube channel?"
+}
